@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr code generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@400;500&family=Roboto:ital,wght@0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="qr-header">
+            <h1>QR CODE GENERATOR</h1>
+            <input type="text" placeholder="Enter your text or url" spellcheck="false" id="qr-input">
+            <div>
+                <label for="sizes">Select size:</label>
+                <select id="sizes">
+                    <option value="100">100x100</option>
+                    <option value="200">200x200</option>
+                    <option value="300">300x300</option>
+                    <option value="400">400x400</option>
+                </select>
+            </div>
+        </div>
+        <div class="qr-body">
+        </div>
+        <div class="qr-footer">
+            <a harf="" id="generate-btn">Generate</a>
+            <a harf="" id="download-btn" download="Qr_code.png">Download</a>
+        </div>
+    </div>
+
+    <script src="sccript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+</html>
